@@ -72,7 +72,7 @@ html, body { margin: 0; padding: 0; }
     border: 1px solid rgba(255, 255, 255, .2);
     border-radius: 8px;
     background: transparent;
-    color: aliceblue;
+    color: #F1E9D2;
     cursor: pointer;
 }
 
@@ -88,7 +88,7 @@ html, body { margin: 0; padding: 0; }
     text-decoration:none;
     color:inherit;
     font-weight:700;
-    color: aliceblue;
+    color: #F1E9D2;
     padding-left: .5rem;
 }
 
@@ -99,7 +99,9 @@ html, body { margin: 0; padding: 0; }
 }
 
 .links {
-    display: none !important;       
+    display: none !important;
+    color: #F1E9D2;
+    font-family: 'Kerry', Arial, Helvetica, sans-serif;       
     position: absolute;
     right: .75rem;
     top: calc(100% + .4rem);
@@ -126,7 +128,7 @@ html, body { margin: 0; padding: 0; }
 
 .links.open { display: flex !important; }
 
-.links a {color: aliceblue; text-decoration:none; padding:.35rem .25rem;}
+.links a {color: #F1E9D2; text-decoration:none; padding:.35rem .25rem;}
 
 .links a {
     padding: .6rem .75rem;
@@ -146,7 +148,7 @@ html, body { margin: 0; padding: 0; }
     border: 1px solid rgba(255,255,255,.2);
     border-radius: 8px;
     background: transparent;
-    color: aliceblue;
+    color: #F1E9D2;
     cursor: pointer;
   }
 

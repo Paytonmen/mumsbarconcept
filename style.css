@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Kerry;
+    src: url(./fonts/Ring\ of\ Kerry.otf);
+    font-display: swap;
+}
 html, body { margin: 0; padding: 0; }
 
 .imageBkMain {
@@ -8,11 +13,38 @@ html, body { margin: 0; padding: 0; }
 
 .imageBkMain img {
     position: absolute;
+    z-index: 0;
     inset: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
+}
+
+.backGroundText::before{
+  content:"";
+  position:absolute;
+  inset:-.5rem -1rem;
+  background: rgba(0,0,0,.1);
+  filter: blur(6px);    
+  border-radius:.75rem;
+  z-index:-1;          
+}
+
+.backGroundText {
+    z-index: 2;
+    display: grid;
+    color: #F1E9D2;
+    position: absolute;
+    place-content: center end;
+    text-align: right;
+    inset: 0;
+    padding: clamp(1rem, 4vw, 3rem);
+    gap: .1rem;
+    margin-right: clamp(1rem, 5vw, 2rem);
+    text-shadow: 0 1px 2px rgba(0,0,0,.5);
+    font-family: 'Kerry', Arial, Helvetica, sans-serif;
+    font-size: 14pt;
 }
 
 .topBar {
@@ -67,7 +99,7 @@ html, body { margin: 0; padding: 0; }
 }
 
 .links {
-    display: none !important;       /* hide on all sizes */
+    display: none !important;       
     position: absolute;
     right: .75rem;
     top: calc(100% + .4rem);

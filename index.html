@@ -6,10 +6,30 @@
     <title>Kelly's Bar</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
+    <header class="topBar">
+        <div class="navBar">
+            <a class="brand" href="#home">
+                <img src="./images/navbarcrest.png" alt="Kelly's Bar Logo">
+                <span>Kelly's Pub</span>
+            </a>
+            <button class="lines" aria-label="open menu" aria-controls="primary-nav" aria-expanded="false">
+                <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+                    <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+            <nav id="primary-nav" class="links" role="navigation">
+                <a href="#home">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#events">Events</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div> 
+    </header>
     <div class="imageBkMain">
-        <img src="./images/mainback.webp" alt="A picture of an Irish Stew"></a>
+        <img src="./images/mainback.webp" alt="A picture of an Irish Stew">
     </div>
-    
+    <script src="./js/nav.js" defer></script>
 </body>
 </html>

@@ -73,6 +73,7 @@ html, body { margin: 0; padding: 0; }
     border-radius: 8px;
     background: transparent;
     color: #F1E9D2;
+    font-family: 'Kerry', Arial, Helvetica, sans-serif;
     cursor: pointer;
 }
 
@@ -89,6 +90,7 @@ html, body { margin: 0; padding: 0; }
     color:inherit;
     font-weight:700;
     color: #F1E9D2;
+    font-family: 'Kerry', Arial, Helvetica, sans-serif;
     padding-left: .5rem;
 }
 
@@ -128,7 +130,7 @@ html, body { margin: 0; padding: 0; }
 
 .links.open { display: flex !important; }
 
-.links a {color: #F1E9D2; text-decoration:none; padding:.35rem .25rem;}
+.links a {color: #F1E9D2; text-decoration:none; padding:.35rem .25rem; font-family: 'Kerry', Arial, Helvetica, sans-serif;}
 
 .links a {
     padding: .6rem .75rem;
@@ -149,6 +151,7 @@ html, body { margin: 0; padding: 0; }
     border-radius: 8px;
     background: transparent;
     color: #F1E9D2;
+    font-family: 'Kerry', Arial, Helvetica, sans-serif;
     cursor: pointer;
   }
 

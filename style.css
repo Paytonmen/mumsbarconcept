@@ -104,7 +104,8 @@ html, body { margin: 0; padding: 0; }
 .links a:hover{ background: rgba(255,255,255,.06); }
 
 @media (max-width: 720px){
-  .topBar .navBar { position: relative; }  
+  .topBar { overflow: visible; }
+  .navBar {position: relative;}  
 
   .topBar .navBar .lines{
     display: inline-flex !important;       
@@ -118,9 +119,13 @@ html, body { margin: 0; padding: 0; }
   }
 
   .topBar .navBar .links{
-    display: none !important;            
+    display: none !important;
+    position: absolute !important;
+    top: 100%;          
     position: absolute;
-    right: .75rem; top: calc(100% + .4rem);
+    right: .75rem;
+    left: auto;
+    margin-top: .4rem;
     background: #001e08;
     border: 1px solid rgba(255,255,255,.15);
     border-radius: 12px;
@@ -129,6 +134,7 @@ html, body { margin: 0; padding: 0; }
     min-width: 220px;
     box-shadow: 0 10px 24px rgba(0,0,0,.25);
     gap: 0;
+    z-index: 1001;
   }
   .topBar .navBar .links.open{ display: flex !important; }
 
